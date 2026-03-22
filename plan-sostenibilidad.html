@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Plan de Sostenibilidad e Indicadores - Granada Tech Hub" />
+    <meta name="author" content="Gonzalo Hernando, Emilio Montes, Celia Medina, Cristian Cáceres" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+    <title>Plan y ODS | ActFinalUd03</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar glass">
+      <div class="nav-container">
+        <a href="index.html" class="logo">
+          <span class="logo-icon">🌿</span>
+          <span class="logo-text">Granada<span class="highlight">TechHub</span></span>
+        </a>
+        <div class="nav-links desktop-only">
+          <a href="index.html">Inicio</a>
+          <a href="grupos-interes.html">Grupos de Interés</a>
+          <a href="asg.html">Aspectos ASG</a>
+          <a href="plan-sostenibilidad.html" class="btn btn-primary btn-small">Plan y ODS</a>
+        </div>
+        <button class="menu-toggle mobile-only" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <div class="mobile-menu glass hidden">
+        <a href="index.html">Inicio</a>
+        <a href="grupos-interes.html">Grupos de Interés</a>
+        <a href="asg.html">Aspectos ASG</a>
+        <a href="plan-sostenibilidad.html" class="btn btn-primary">Plan y ODS</a>
+      </div>
+    </nav>
+
+    <header class="page-header section-spacing reveal">
+      <div class="section-container text-center">
+        <h1 class="hero-title">Plan de Sostenibilidad y <span class="highlight-gradient">ODS</span></h1>
+        <p class="hero-subtitle">
+          Listado de acciones concretas trazadas para mejorar nuestra eficiencia, los indicadores de seguimiento (KPIs) y su impacto en la agenda global.
+        </p>
+      </div>
+    </header>
+
+    <section class="section about" style="padding-top: 2rem;">
+      <div class="section-container">
+        <div class="cards-grid">
+
+          <!-- Accion 1 -->
+          <div class="card glass-card reveal">
+            <h3 class="highlight">1. Transición a Servidores Verdes</h3>
+            <p><strong>Acción:</strong> Migración progresiva de la energía de nuestros data centers hacia contratos PPA 100% de uso de energías renovables (Solar/Eólica). Mejora de la eficiencia térmica (PUE) en las oficinas de Granada.</p>
+            <p><strong>Indicador:</strong> % de Energía renovable utilizada en total (Meta: 100%).</p>
+            <p><strong>ODS Implicados:</strong></p>
+            <div class="ods-tags">
+              <span class="ods-tag">ODS 7: Energía asequible</span>
+              <span class="ods-tag">ODS 13: Acción por el clima</span>
+            </div>
+          </div>
+
+          <!-- Accion 2 -->
+          <div class="card glass-card reveal">
+            <h3 class="highlight">2. Reciclaje Activo de Hardware</h3>
+            <p><strong>Acción:</strong> Programas de donación o envío sistemático a plantas de triaje (reciclaje de equipos informáticos) de todos los portátiles, monitores y redes dados de baja, aplicando política de "Cero E-waste en vertederos".</p>
+            <p><strong>Indicador:</strong> Kg de equipos electrónicos reciclados o donados al año.</p>
+            <p><strong>ODS Implicados:</strong></p>
+            <div class="ods-tags">
+              <span class="ods-tag">ODS 12: Prod. y consumo responsables</span>
+            </div>
+          </div>
+
+          <!-- Accion 3 -->
+          <div class="card glass-card reveal">
+            <h3 class="highlight">3. Green Tech Schooling (Empleados)</h3>
+            <p><strong>Acción:</strong> Promoción de planes formativos internos orientados al desarrollo de algoritmos de bajo consumo que ejecutan un "Código Eficiente" y charlas sobre buenas prácticas ecológicas.</p>
+            <p><strong>Indicador:</strong> Nº de horas de formación en sostenibilidad para empleados al trimestre.</p>
+            <p><strong>ODS Implicados:</strong></p>
+            <div class="ods-tags">
+              <span class="ods-tag">ODS 4: Educación de calidad</span>
+              <span class="ods-tag">ODS 9: Industria e innovación</span>
+            </div>
+          </div>
+
+          <!-- Accion 4 -->
+          <div class="card glass-card reveal">
+            <h3 class="highlight">4. Cultura de Teletrabajo</h3>
+            <p><strong>Acción:</strong> Implementación de días de teletrabajo flexibles (hasta un 80% semanal) para minimizar los desplazamientos diarios (emisiones del parque automovilístico) reduciendo el desgaste de 120 empleados en tránsito.</p>
+            <p><strong>Indicador:</strong> Consumo energético equivalente en rutas evitadas / Tasa de ocupación en oficina (% mitigado).</p>
+            <p><strong>ODS Implicados:</strong></p>
+            <div class="ods-tags">
+              <span class="ods-tag">ODS 11: Ciudades sostenibles</span>
+              <span class="ods-tag">ODS 8: Trabajo decente</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="section-container">
+        <div class="footer-bottom" style="border-top: none;">
+          <p>&copy; 2026 Módulo Sostenibilidad aplicada al sistema productivo. Grupo: Gonzalo Hernando, Emilio Montes, Celia Medina, Cristian Cáceres.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

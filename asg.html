@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Aspectos ASG - Plan de Sostenibilidad Granada Tech Hub" />
+    <meta name="author" content="Gonzalo Hernando, Emilio Montes, Celia Medina, Cristian Cáceres" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+    <title>Aspectos ASG | ActFinalUd03</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar glass">
+      <div class="nav-container">
+        <a href="index.html" class="logo">
+          <span class="logo-icon">🌿</span>
+          <span class="logo-text">Granada<span class="highlight">TechHub</span></span>
+        </a>
+        <div class="nav-links desktop-only">
+          <a href="index.html">Inicio</a>
+          <a href="grupos-interes.html">Grupos de Interés</a>
+          <a href="asg.html" class="active">Aspectos ASG</a>
+          <a href="plan-sostenibilidad.html" class="btn btn-primary btn-small">Plan y ODS</a>
+        </div>
+        <button class="menu-toggle mobile-only" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <div class="mobile-menu glass hidden">
+        <a href="index.html">Inicio</a>
+        <a href="grupos-interes.html">Grupos de Interés</a>
+        <a href="asg.html">Aspectos ASG</a>
+        <a href="plan-sostenibilidad.html" class="btn btn-primary">Plan y ODS</a>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header section-spacing reveal">
+      <div class="section-container text-center">
+        <h1 class="hero-title">Aspectos <span class="highlight-gradient">ASG</span> Materiales</h1>
+        <p class="hero-subtitle">
+          Análisis de los pilares Ambientales (A), Sociales (S) y de Gobernanza (G) que resultan críticos para la viabilidad de nuestra actividad tecnológica.
+        </p>
+      </div>
+    </header>
+
+    <section class="section about" style="padding-top: 2rem;">
+      <div class="section-container">
+        
+        <!-- Ambiental -->
+        <div class="glass-card page-section reveal">
+          <h2 class="section-title"><span class="highlight">A</span>mbientales</h2>
+          <p>La naturaleza de nuestra empresa de software e infraestructura digital conlleva una alta dependencia energética. Los aspectos ambientales críticos son:</p>
+          <ul class="features-list">
+            <li>
+              <span class="icon">⚡</span>
+              <div>
+                <h3>Consumo Energético de Servidores</h3>
+                <p>Nuestros centros de datos operan 24/7. Su refrigeración y funcionamiento constante suponen el 80% de nuestro consumo eléctrico total, siendo el mayor foco de emisiones de CO2 equivalente.</p>
+              </div>
+            </li>
+            <li>
+              <span class="icon">🖥️</span>
+              <div>
+                <h3>Residuos Electrónicos (e-waste)</h3>
+                <p>El reemplazo rápido de equipos (portátiles, discos duros, routers) debido a la rápida obsolescencia del hardware genera residuos altamente contaminantes si no son gestionados o reciclados adecuadamente.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Social -->
+        <div class="glass-card page-section reveal" style="margin-top: 3rem;">
+          <h2 class="section-title"><span class="highlight">S</span>ociales</h2>
+          <p>El sector tecnológico se enfrenta a retos constantes en retención de talento y entorno laboral. Nuestros aspectos más relevantes son:</p>
+          <ul class="features-list">
+            <li>
+              <span class="icon">🧑‍💻</span>
+              <div>
+                <h3>Condiciones y Formación del Personal</h3>
+                <p>La presión por fechas de entrega (_crunch_) es común en este sector. Abordamos una necesidad inminente de estabilidad y horarios flexibles, además del reciclaje formativo continuo (upskilling) para que nuestros empleados no se queden obsoletos.</p>
+              </div>
+            </li>
+            <li>
+              <span class="icon">🤝</span>
+              <div>
+                <h3>Igualdad, Diversidad e Inclusión</h3>
+                <p>Existe una brecha de género histórica en la programación e informática. Para nosotros es fundamental igualar los ratios en la contratación y liderar programas que involucren a todas las comunidades tecnológicas en Granada.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Gobernanza -->
+        <div class="glass-card page-section reveal" style="margin-top: 3rem;">
+          <h2 class="section-title"><span class="highlight">G</span>obernanza</h2>
+          <p>El cumplimiento ético y de normativas garantiza que nuestros grupos de interés confíen en nuestros servicios Cloud y de base de datos.</p>
+          <ul class="features-list">
+            <li>
+              <span class="icon">🔒</span>
+              <div>
+                <h3>Protección de Datos e InfoSeguridad</h3>
+                <p>Al manejar redes e información de clientes privados y administraciones (RGPD), es nuestro deber absoluto evitar brechas de seguridad y fugas de datos informáticos.</p>
+              </div>
+            </li>
+            <li>
+              <span class="icon">⚖️</span>
+              <div>
+                <h3>Transparencia y Ética Empresarial</h3>
+                <p>Asegurar prácticas limpias en los procesos de licitación de software, promoviendo algoritmos no sesgados, inteligencia artificial ética (AI Ethics) y una gobernanza sin conflictos de intereses.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="section-container">
+        <div class="footer-bottom" style="border-top: none;">
+          <p>&copy; 2026 Módulo Sostenibilidad aplicada al sistema productivo. Grupo: Gonzalo Hernando, Emilio Montes, Celia Medina, Cristian Cáceres.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
