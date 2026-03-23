@@ -1,22 +1,22 @@
 // Handle Mobile Menu
-const menuToggle = document.querySelector('.menu-toggle');
-const mobileMenu = document.querySelector('.mobile-menu');
+const menuToggle = document.querySelector('.boton-menu');
+const mobileMenu = document.querySelector('.menu-movil');
 
 menuToggle.addEventListener('click', () => {
-  mobileMenu.classList.toggle('hidden');
-  mobileMenu.classList.toggle('active');
+  mobileMenu.classList.toggle('oculto');
+  mobileMenu.classList.toggle('activo');
 });
 
 // Close mobile menu when clicking a link
 document.querySelectorAll('.mobile-menu a').forEach(link => {
   link.addEventListener('click', () => {
-    mobileMenu.classList.add('hidden');
-    mobileMenu.classList.remove('active');
+    mobileMenu.classList.add('oculto');
+    mobileMenu.classList.remove('activo');
   });
 });
 
 // Scroll Reveal Animation (Intersection Observer)
-const revealElements = document.querySelectorAll('.reveal');
+const revealElements = document.querySelectorAll('.revelar');
 
 const revealOptions = {
   threshold: 0.15,
@@ -28,7 +28,7 @@ const revealOnScroll = new IntersectionObserver(function(entries, observer) {
     if (!entry.isIntersecting) {
       return;
     } else {
-      entry.target.classList.add('active');
+      entry.target.classList.add('activo');
       observer.unobserve(entry.target);
     }
   });
@@ -39,7 +39,7 @@ revealElements.forEach(el => {
 });
 
 // Sticky Navbar Background Blur
-const navbar = document.querySelector('.navbar');
+const navbar = document.querySelector('.barra-nav');
 
 window.addEventListener('scroll', () => {
   if (window.scrollY > 50) {
