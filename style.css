@@ -1,3 +1,4 @@
+/* ===== BASE ===== */
 * {
   margin: 0;
   padding: 0;
@@ -13,27 +14,37 @@ body, .fondo-oscuro, .pie-pagina {
   line-height: 1.6;
   overflow-x: hidden;
 }
+
+ul {
+  list-style: none;
+}
+
 .fondo-oscuro, .pie-pagina {
   background: #111a2a;
 }
-h1, h2, h3, h4, .logo, .numero-estadistica, .boton, .miembro-equipo {
+.logo, .numero-estadistica, .boton, .miembro-equipo {
   font-family: 'Outfit', sans-serif;
   color: #fff;
 }
+
+/* ===== TIPOGRAFÍA ===== */
+
 h1, h2, h3, h4 {
+  font-family: 'Outfit', sans-serif;
+  color: #fff;
   line-height: 1.2;
 }
+
 a, .resaltado, .etiqueta-ods {
   color: #10b981;
   text-decoration: none;
   transition: .2s ease;
 }
+
 a:hover, .enlaces-nav a:not(.boton):hover, .enlaces-pie a:hover, .redes-pie a:hover {
   color: #059669;
 }
-ul {
-  list-style: none;
-}
+
 .resaltado-degradado {
   background: linear-gradient(90deg, #10b981, #f59e0b);
   -webkit-background-clip: text;
@@ -41,15 +52,17 @@ ul {
   -webkit-text-fill-color: transparent;
 }
 
-/* CONTENEDORES */
+/* ===== CONTENEDORES ===== */
 
 .contenedor-seccion, .contenedor-nav, .titulo-portada, .subtitulo-portada, .cabecera-seccion, .tarjeta-visual {
   max-width: 1200px;
   margin: 0 auto;
 }
+
 .contenedor-seccion {
   padding: 0 2rem;
 }
+
 .contenedor-nav {
   padding: 1rem 2rem;
   display: flex;
@@ -57,18 +70,19 @@ ul {
   align-items: center;
 }
 
-/* SECCIÓN */
-
-.seccion, .seccion-pagina, .tarjeta-ancho-completo, .tarjeta-visual, .caja-llamada {
+.seccion-pagina, .tarjeta-ancho-completo, .tarjeta-visual, .caja-llamada {
   padding: 3rem;
 }
+
 .seccion {
   padding: 6rem 0;
 }
+
 .section-title {
   font: 700 2.5rem 'Outfit', sans-serif;
   margin-bottom: 1rem;
 }
+
 .flex-columna-centro, .portada, .estadistica, .boton-menu, .menu-movil, .lista-caracteristicas {
   display: flex;
   flex-direction: column;
@@ -77,6 +91,8 @@ ul {
   align-items: center;
   text-align: center;
 }
+
+/* ===== COMPONENTES ===== */
 
 /* BOTONES */
 
@@ -89,9 +105,11 @@ ul {
   text-align: center;
   border: none;
 }
+
 .boton-primario {
   background: #10b981;
 }
+
 .boton-primario:hover {
   background: #059669;
   transform: translateY(-2px);
@@ -101,19 +119,25 @@ ul {
   background: transparent;
   border: 1px solid #ffffff33;
 }
+
 .boton-borde:hover {
   border-color: #10b981;
   transform: translateY(-2px);
 }
+
 .boton-pequeno {
   padding: .5rem 1.5rem;
   font-size: .9rem;
 }
+
 .boton-grande {
   padding: 1rem 2.5rem;
   font-size: 1.1rem;
 }
-.cristal, .barra-nav {
+
+
+
+.cristal {
   background: rgba(15, 23, 42, 0.6);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
@@ -129,6 +153,9 @@ ul {
 /* BARRA DE NAVEGACIÓN */
 
 .barra-nav {
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   position: fixed;
   inset: 0 0 auto 0;
   z-index: 1000;
@@ -137,9 +164,6 @@ ul {
 
 .enlaces-nav {
   gap: 2rem;
-}
-
-.enlaces-nav, .lista-caracteristicas li, .logo {
   display: flex;
   align-items: center;
 }
@@ -148,6 +172,13 @@ ul {
   font: 500 1rem 'Inter', sans-serif;
   color: #e2e8f0;
 }
+
+.lista-caracteristicas li, .logo {
+  display: flex;
+  align-items: center;
+}
+
+
 .solo-movil, .menu-movil.oculto {
   display: none;
 }
@@ -191,7 +222,7 @@ ul {
   font-size: 1.8rem;
 }
 
-/* PORTADA */
+/* ===== PORTADA ===== */
 
 .portada {
   position: relative;
@@ -218,12 +249,15 @@ ul {
   letter-spacing: -.02em;
   margin-bottom: 1.5rem;
 }
+
 .subtitulo-portada, .cabecera-seccion, .descripcion-seccion, .cuadricula-pie {
   margin-bottom: 3rem;
 }
+
 .subtitulo-portada {
   font-size: 1.2rem;
 }
+
 .acciones-portada {
   display: flex;
   justify-content: center;
@@ -247,7 +281,7 @@ ul {
 }
 
 
-/* NOSOTROS */
+/* ===== NOSOTROS ===== */
 
 .cuadricula-nosotros, .tarjeta-visual {
   display: grid;
@@ -261,6 +295,9 @@ ul {
   gap: 2rem;
   z-index: 2;
 }
+
+/* LISTA */
+
 .lista-caracteristicas {
   margin-top: 2rem;
   gap: 1.5rem;
@@ -306,6 +343,9 @@ ul {
 .cabecera-seccion p, .marca-pie p, .etiquetas-ods {
   margin-top: 1rem;
 }
+
+/* ===== TARJETAS ===== */
+
 .cuadricula-tarjetas {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -353,7 +393,7 @@ ul {
   flex-shrink: 0;
 }
 
-/* PIE DE PÁGINA */
+/* ===== PIE DE PÁGINA ===== */
 
 .pie-pagina {
   border-top: 1px solid rgba(255, 255, 255, 0.05);
@@ -423,6 +463,9 @@ ul {
   border: 1px solid rgba(16, 185, 129, 0.3);
   border-radius: 4px;
 }
+
+/* ===== RESPONSIVE ===== */
+
 @media (max-width: 992px) {
   .cuadricula-nosotros {
     grid-template-columns: 1fr;
