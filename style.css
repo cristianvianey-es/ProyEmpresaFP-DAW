@@ -173,24 +173,21 @@ a:hover, .enlaces-nav a:not(.boton):hover, .enlaces-pie a:hover, .redes-pie a:ho
   color: #e2e8f0;
 }
 
-.lista-caracteristicas li, .logo {
-  display: flex;
-  align-items: center;
-}
-
-
 .solo-movil, .menu-movil.oculto {
   display: none;
 }
+
 .solo-escritorio, .menu-movil.activo {
   display: flex;
 }
+
 .boton-menu {
   background: transparent;
   border: none;
   cursor: pointer;
   gap: 5px;
 }
+
 .boton-menu span {
   display: block;
   width: 25px;
@@ -198,6 +195,7 @@ a:hover, .enlaces-nav a:not(.boton):hover, .enlaces-pie a:hover, .redes-pie a:ho
   background: #fff;
   transition: .3s;
 }
+
 .menu-movil {
   display: none;
   padding: 1rem 2rem 2rem;
@@ -205,6 +203,7 @@ a:hover, .enlaces-nav a:not(.boton):hover, .enlaces-pie a:hover, .redes-pie a:ho
   position: absolute;
   inset: 100% 0 auto 0;
 }
+
 .menu-movil a {
   font-size: 1.2rem;
   color: #fff;
@@ -218,6 +217,7 @@ a:hover, .enlaces-nav a:not(.boton):hover, .enlaces-pie a:hover, .redes-pie a:ho
   gap: .5rem;
   font: 800 1.5rem 'Outfit', sans-serif;
 }
+
 .icono-logo {
   font-size: 1.8rem;
 }
@@ -231,12 +231,14 @@ a:hover, .enlaces-nav a:not(.boton):hover, .enlaces-pie a:hover, .redes-pie a:ho
   overflow: hidden;
 }
 
-.fondo-portada, .decoracion-circulo {
+.decoracion-circulo {
   position: absolute;
   z-index: -1;
 }
 
 .fondo-portada {
+  position: absolute;
+  z-index: -1;
   inset: -50% -50% auto auto;
   width: 200%;
   height: 200%;
@@ -274,24 +276,21 @@ a:hover, .enlaces-nav a:not(.boton):hover, .enlaces-pie a:hover, .redes-pie a:ho
   margin-bottom: 2rem;
 }
 
-@keyframes girar {
-  100% {
-    transform: rotate(360deg);
-  }
-}
+
 
 
 /* ===== NOSOTROS ===== */
 
-.cuadricula-nosotros, .tarjeta-visual {
+.cuadricula-nosotros {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-}
-.cuadricula-nosotros {
   gap: 4rem;
 }
 .tarjeta-visual {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
   gap: 2rem;
   z-index: 2;
 }
@@ -303,6 +302,8 @@ a:hover, .enlaces-nav a:not(.boton):hover, .enlaces-pie a:hover, .redes-pie a:ho
   gap: 1.5rem;
 }
 .lista-caracteristicas li {
+  display: flex;
+  align-items: center;
   gap: 1rem;
 }
 .lista-caracteristicas .icono {
@@ -422,15 +423,7 @@ a:hover, .enlaces-nav a:not(.boton):hover, .enlaces-pie a:hover, .redes-pie a:ho
   border-top: 1px solid rgba(255, 255, 255, 0.05);
   font-size: .9rem;
 }
-.revelar {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: .8s cubic-bezier(.5,0,0,1);
-}
-.revelar.activo {
-  opacity: 1;
-  transform: translateY(0);
-}
+
 .cabecera-pagina {
   padding: 150px 2rem 50px;
   background: radial-gradient(circle at 50% -20%, rgba(16, 185, 129, 0.1), transparent 60%);
@@ -462,6 +455,24 @@ a:hover, .enlaces-nav a:not(.boton):hover, .enlaces-pie a:hover, .redes-pie a:ho
   background: rgba(16, 185, 129, 0.2);
   border: 1px solid rgba(16, 185, 129, 0.3);
   border-radius: 4px;
+}
+
+/* ===== ANIMACIONES ===== */
+
+.revelar {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: .8s cubic-bezier(.5,0,0,1);
+}
+.revelar.activo {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes girar {
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* ===== RESPONSIVE ===== */
