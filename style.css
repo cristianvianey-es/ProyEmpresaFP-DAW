@@ -40,6 +40,9 @@ ul {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+/* CONTENEDORES */
+
 .contenedor-seccion, .contenedor-nav, .titulo-portada, .subtitulo-portada, .cabecera-seccion, .tarjeta-visual {
   max-width: 1200px;
   margin: 0 auto;
@@ -53,6 +56,9 @@ ul {
   justify-content: space-between;
   align-items: center;
 }
+
+/* SECCIÓN */
+
 .seccion, .seccion-pagina, .tarjeta-ancho-completo, .tarjeta-visual, .caja-llamada {
   padding: 3rem;
 }
@@ -71,6 +77,9 @@ ul {
   align-items: center;
   text-align: center;
 }
+
+/* BOTONES */
+
 .boton {
   display: inline-block;
   font-weight: 600;
@@ -116,28 +125,25 @@ ul {
   border-radius: 24px;
   box-shadow: 0 8px 32px 0 rgba(7, 24, 7, 0.37);
 }
+
+/* BARRA DE NAVEGACIÓN */
+
 .barra-nav {
   position: fixed;
   inset: 0 0 auto 0;
   z-index: 1000;
   transition: .3s ease;
 }
-.logo {
-  display: flex;
-  align-items: center;
-  gap: .5rem;
-  font: 800 1.5rem 'Outfit', sans-serif;
+
+.enlaces-nav {
+  gap: 2rem;
 }
-.icono-logo {
-  font-size: 1.8rem;
-}
+
 .enlaces-nav, .lista-caracteristicas li, .logo {
   display: flex;
   align-items: center;
 }
-.enlaces-nav {
-  gap: 2rem;
-}
+
 .enlaces-nav a:not(.boton) {
   font: 500 1rem 'Inter', sans-serif;
   color: #e2e8f0;
@@ -172,16 +178,33 @@ ul {
   font-size: 1.2rem;
   color: #fff;
 }
+
+/* LOGO BOTÓN NAVEGACIÓN */
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  font: 800 1.5rem 'Outfit', sans-serif;
+}
+.icono-logo {
+  font-size: 1.8rem;
+}
+
+/* PORTADA */
+
 .portada {
   position: relative;
   min-height: 100vh;
   padding: 100px 2rem 0;
   overflow: hidden;
 }
+
 .fondo-portada, .decoracion-circulo {
   position: absolute;
   z-index: -1;
 }
+
 .fondo-portada {
   inset: -50% -50% auto auto;
   width: 200%;
@@ -189,20 +212,7 @@ ul {
   background: radial-gradient(circle at 50% 50%, rgba(16, 185, 129, 0.15) 0%, transparent 40%);
   animation: girar 30s linear infinite;
 }
-@keyframes girar {
-  100% {
-    transform: rotate(360deg);
-  }
-}
-.insignia {
-  display: inline-block;
-  padding: .5rem 1rem;
-  background: rgba(16, 185, 129, 0.1);
-  border: 1px solid rgba(16, 185, 129, 0.2);
-  border-radius: 50px;
-  font: 600 .9rem 'Inter', sans-serif;
-  margin-bottom: 2rem;
-}
+
 .titulo-portada {
   font-size: clamp(2.5rem, 5vw, 5rem);
   letter-spacing: -.02em;
@@ -219,6 +229,26 @@ ul {
   justify-content: center;
   gap: 1rem;
 }
+
+.insignia {
+  display: inline-block;
+  padding: .5rem 1rem;
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  border-radius: 50px;
+  font: 600 .9rem 'Inter', sans-serif;
+  margin-bottom: 2rem;
+}
+
+@keyframes girar {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* NOSOTROS */
+
 .cuadricula-nosotros, .tarjeta-visual {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -322,6 +352,9 @@ ul {
 .boton-llamada {
   flex-shrink: 0;
 }
+
+/* PIE DE PÁGINA */
+
 .pie-pagina {
   border-top: 1px solid rgba(255, 255, 255, 0.05);
   padding: 4rem 0 2rem;
