@@ -1,4 +1,4 @@
-// Handle Mobile Menu
+// Manejar Menú Móvil
 const menuToggle = document.querySelector('.boton-menu');
 const mobileMenu = document.querySelector('.menu-movil');
 
@@ -7,7 +7,7 @@ menuToggle.addEventListener('click', () => {
   mobileMenu.classList.toggle('activo');
 });
 
-// Close mobile menu when clicking a link
+// Cerrar menú móvil al hacer clic en un enlace
 document.querySelectorAll('.mobile-menu a').forEach(link => {
   link.addEventListener('click', () => {
     mobileMenu.classList.add('oculto');
@@ -15,7 +15,7 @@ document.querySelectorAll('.mobile-menu a').forEach(link => {
   });
 });
 
-// Scroll Reveal Animation (Intersection Observer)
+// Animación de Revelación al Desplazarse (Intersection Observer)
 const revealElements = document.querySelectorAll('.revelar');
 
 const revealOptions = {
@@ -38,7 +38,7 @@ revealElements.forEach(el => {
   revealOnScroll.observe(el);
 });
 
-// Sticky Navbar Background Blur
+// Barra de Navegación Adhesiva con Fondo Borroso
 const navbar = document.querySelector('.barra-nav');
 
 window.addEventListener('scroll', () => {
